@@ -1,0 +1,45 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.busqueda{
+    background-color: v.$grisClaro;
+    padding: 5rem 0;
+
+    &__heading{
+        color: v.$gris;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.formulario{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+
+    @include m.tablet {
+  /*    display:flex;
+        flex-direction:row;
+        gap: 2rem;
+        align-items:center;
+        justify-content: center;*/
+        @include m.grid(4, 3rem)
+    }
+
+    &__campos{
+        padding: 1rem;
+        border: 1px solid v.$gris;
+        margin-bottom: 2rem;
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__submit{
+        @include m.boton (v.$primario, v.$blanco);
+        margin-top: 0;
+        cursor: pointer;
+    }
+}
