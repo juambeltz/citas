@@ -10,4 +10,4 @@
 - gulp
 
 ## 🌐 Ver sitio en vivo
-https://juambeltz.github.io/inmobiliaria/
+https://juambeltz.github.io/citas/
